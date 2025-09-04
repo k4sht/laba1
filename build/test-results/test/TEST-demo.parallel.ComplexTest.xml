@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.parallel.ComplexTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-09-04T08:57:56.718Z" hostname="MacBook-Pro-Nikita.local" time="0.018">
+  <properties/>
+  <testcase name="chaining_shouldWorkLeftToRight()" classname="demo.parallel.ComplexTest" time="0.011"/>
+  <testcase name="minus_shouldSubtractInPlace_andReturnThis()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="lengthSQ_shouldMatchFormula()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="copy_shouldBeIndependentObject()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="times_complex_shouldMultiplyInPlace_andReturnThis()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="plus_shouldAddInPlace_andReturnThis()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="conjugate_shouldFlipImagSign_inPlace()" classname="demo.parallel.ComplexTest" time="0.001"/>
+  <testcase name="times_scalar_shouldScaleInPlace()" classname="demo.parallel.ComplexTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
