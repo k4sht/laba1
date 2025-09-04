@@ -84,6 +84,13 @@ public class Complex {
         im = imag;
         return this;
     }
+    public Complex copy() { return new Complex(re, im); }
+
+    public Complex conjugate() { im = -im; return this; }
+
+    public Complex times(double k) { re *= k; im *= k; return this; }
+
+    public Complex minus(Complex b) { re -= b.re; im -= b.im; return this; }
 
     /**
      * Square of Complex object's length, we're using square of length to 
