@@ -351,20 +351,21 @@ class MandelbrotSetTask extends Task<Long> {
          * Color stops for colors table: color values
          */
         Color[] cc = {
-            Color.rgb(40, 0, 0),
-            Color.RED,
-            Color.WHITE,
-            Color.RED,
-            Color.rgb(100, 0, 0),
-            Color.RED,
-            Color.rgb(50, 0, 0)
+            Color.rgb(5, 10, 30),     // тёмный синий почти чёрный
+            Color.rgb(20, 30, 90),    // глубокий индиго
+            Color.rgb(70, 40, 140),   // фиолетовый
+            Color.rgb(40, 120, 200),  // лазурный
+            Color.rgb(180, 220, 255), // очень светло-голубой
+            Color.WHITE               // белый
         };
         
         /**
          * Color stops for colors table: relative position in the table
          */
         double[] cp = {
-            0, 0.17, 0.25, 0.30, 0.5, 0.75, 1,};
+            0.0, 0.18, 0.35, 0.6, 0.85, 1.0
+        };
+
         
         /**
          * Color table population
@@ -372,7 +373,7 @@ class MandelbrotSetTask extends Task<Long> {
         int j = 0;
         for (int i = 0; i < colors.length; i++) {
             double p = (double) i / (colors.length - 1);
-            if (p > cp[j + 1]) {
+            if (j < cp.length - 2 && p > cp[j + 1]) {
                 j++;
             }
             double val = (p - cp[j]) / (cp[j + 1] - cp[j]);
